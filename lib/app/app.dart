@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:laboratorio02/app/view/splash.dart';
+import 'package:laboratorio02/app/view/splash/splash_page.dart';
 
 
 class MyApp extends StatelessWidget {
@@ -12,6 +12,7 @@ class MyApp extends StatelessWidget {
     const backgroundColor = Color(0xFFF5F5F5);
     return MaterialApp(
       title: 'Flutter Demo',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor:primary),
         scaffoldBackgroundColor: backgroundColor,

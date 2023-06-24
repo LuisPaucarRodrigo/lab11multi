@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:laboratorio02/app/view/components/h1.dart';
+import 'package:laboratorio02/app/view/components/shape.dart';
 import 'package:laboratorio02/app/view/tarea.dart';
-import 'package:laboratorio02/app/view/task_list.dart';
+import 'package:laboratorio02/app/view/task_list/task_list_page.dart';
 
 class SplashPage extends StatelessWidget {
   const SplashPage({super.key});
@@ -20,11 +22,7 @@ class SplashPage extends StatelessWidget {
                   return const TaskwidgedPage();
                 }));
               },
-                child: Image.asset(
-                'assets/images/Vector.png',
-                width: 141,
-                height: 129,
-              ),
+                child: const Row(children: [Shape()],),
               )
             ],
           ),
@@ -35,10 +33,7 @@ class SplashPage extends StatelessWidget {
             height: 168,
           ),
           const SizedBox(height: 99),
-          Text('Lista de tareas', style: Theme.of(context).textTheme.bodyMedium!.copyWith(
-            fontSize: 18,
-            fontWeight: FontWeight.w600
-          )),
+          const H1('Lista de Tareas'),
           const SizedBox(height: 21),
           const Padding(
             padding: EdgeInsets.symmetric(horizontal: 32)),
